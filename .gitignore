@@ -1,0 +1,6 @@
+node_modules
+package-lock.json
+doc/out
+
+example/*.html
+example/*.out

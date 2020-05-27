@@ -1,0 +1,32 @@
+{
+  "name": "dommini",
+  "version": "0.1.0",
+  "description": "JavaScript package for easy and lightweight creation of DOM trees and HTML files",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stranskyjan/dommini"
+  },
+  "homepage": "https://www.npmjs.com/package/dommini",
+  "keywords": [
+    "dom",
+    "html",
+    "template",
+    "minimalistic"
+  ],
+  "author": "Jan Stránský <honzik.stransky@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdoc": "*",
+    "embedme": "*",
+    "dommini": "file:."
+  },
+  "scripts": {
+    "example": "npm run example:readme",
+    "example:readme": "for e in example/readme.*.js; do echo; echo $e; node $e; done",
+    "clean": "rm -rf doc/out",
+    "clean:modules": "rm -rf node_modules package-lock.json",
+    "embedme": "npx embedme README.md",
+    "doc": "node_modules/.bin/jsdoc -c doc/jsdoc.conf.json -d doc/out"
+  }
+}
